@@ -257,4 +257,3 @@ tab:Banner('Credits', {
     Scripting = "wally#5423";
     ["Mental support"] = "swag#5948 & jack#2000",
 })
-game.StarterGui:SetCore("SendNotification", {Title = "Arabic Fort Night", Text = "Success Script Loaded", Duration = 4,})
