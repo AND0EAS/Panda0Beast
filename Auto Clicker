@@ -1,0 +1,33 @@
+
+local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+
+
+local Player = Players.LocalPlayer
+local Enabled = false
+local Mouse = Player:GetMouse()
+local X, Y = 0, 0
+local LastC = Color3.new(1, 0, 0)
+local LastU = tick()
+
+
+if not pcall(function() return syn.protect_gui end) then
+syn = {}
+syn.protect_gui = function(A_1)
+A_1.Parent = CoreGui
+end
+end
+
+
+local Library = loadstring(game:HttpGetAsync('https://pastebin.com/raw/edJT9EGX%27))()
+local Window = Library:CreateWindow("AutoClicker by Ezpi")
+Enabled_1 = Window:AddColor({
+text = 'Status:',
+flag = "Ezpi_1",
+color = Color3.new(1, 0, 0),
+callback = function(A_1)
+-- "Enabled" Color
+local NewColor = Color3.new(0, 1, 0)
+if Enabled == false then
+NewColor = Color3
