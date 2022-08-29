@@ -31,3 +31,4 @@ callback = function(A_1)
 local NewColor = Color3.new(0, 1, 0)
 if Enabled == false then
 NewColor = Color3
+game.StarterGui:SetCore("SendNotification", {Title = "Auto Clicker", Text = "Success Script Loaded", Duration = 4,})
