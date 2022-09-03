@@ -84,4 +84,4 @@ UIS.InputEnded:Connect(function(Input)
 		UnLockCursor()
 	end
 end)
-game.StarterGui:SetCore("SendNotification", {Title = "", Text = "🎮", Duration = 10,})
+game.StarterGui:SetCore("SendNotification", {Title = "Success", Text = "🎮", Duration = 10,})
