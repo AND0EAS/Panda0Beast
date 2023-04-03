@@ -1807,7 +1807,7 @@ do
 		return dropdown
 	end
 	
-	-- class functions
+	
 	
 	function library:SelectPage(page, toggle)
 		
@@ -1818,7 +1818,7 @@ do
 		local button = page.button
 		
 		if toggle then
-			-- page button
+			
 			button.Title.TextTransparency = 0
 			button.Title.Font = Enum.Font.GothamSemibold
 			
@@ -1826,7 +1826,7 @@ do
 				button.Icon.ImageTransparency = 0
 			end
 			
-			-- update selected page
+			
 			local focusedPage = self.focusedPage
 			self.focusedPage = page
 			
@@ -1834,7 +1834,7 @@ do
 				self:SelectPage(focusedPage)
 			end
 			
-			-- sections
+			
 			local existingSections = focusedPage and #focusedPage.sections or 0
 			local sectionsRequired = #page.sections - existingSections
 			
@@ -1881,7 +1881,7 @@ do
 			wait(0.05)
 			page:Resize(true)
 		else
-			-- page button
+			
 			button.Title.Font = Enum.Font.Gotham
 			button.Title.TextTransparency = 0.65
 			
@@ -1889,7 +1889,7 @@ do
 				button.Icon.ImageTransparency = 0.65
 			end
 			
-			-- sections
+			
 			for i, section in pairs(page.sections) do	
 				utility:Tween(section.container.Parent, {Size = UDim2.new(1, -10, 0, 28)}, 0.1)
 				utility:Tween(section.container.Title, {TextTransparency = 1}, 0.1)
@@ -1954,7 +1954,7 @@ do
 		error("No module found under "..tostring(info))
 	end
 	
-	-- updates
+	
 	
 	function section:updateButton(button, title)
 		button = self:getModule(button)
